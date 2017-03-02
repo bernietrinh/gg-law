@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=dev nodemon $NODE_DEBUG_OPTION -w src -w config src/index.js --exec babel-node",
-    "build": "",
-    "deploy": "",
+    "clean": "rm -rf dist && mkdir dist",
+    "start": "node dist/index.js",
+    "build": "npm run clean && npm run build-server",
+    "build-server": "babel -d dist src -s",
+    "deploy": "git push heroku master",
     "test": "test"
   },
   "repository": {
