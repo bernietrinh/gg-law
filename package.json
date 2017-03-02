@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev nodemon $NODE_DEBUG_OPTION -w src -w config src/index.js --exec babel-node",
-    "clean": "rm -rf dist && mkdir dist",
-    "start": "npm run build && node dist/index.js",
-    "build": "npm install && npm run clean && npm run build-server",
-    "build-server": "babel -d dist src -s",
+    "dev": "NODE_ENV=development nodemon $NODE_DEBUG_OPTION -w src -w config src/index.js",
+    "start": "node src/index.js",
     "deploy": "git push heroku master && git push origin master",
     "test": "test"
   },
@@ -32,9 +29,5 @@
     "google-auth-library": "^0.10.0",
     "googleapis": "^17.1.0",
     "node-fetch": "^1.6.3"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-preset-node6": "^11.0.0"
   }
 }
