@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=dev nodemon $NODE_DEBUG_OPTION -w src -w config src/index.js --exec babel-node",
     "clean": "rm -rf dist && mkdir dist",
     "start": "npm run build && node dist/index.js",
-    "build": "npm run clean && npm run build-server",
+    "build": "npm install && npm run clean && npm run build-server",
     "build-server": "babel -d dist src -s",
     "deploy": "git push heroku master && git push origin master",
     "test": "test"
