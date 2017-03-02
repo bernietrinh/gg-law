@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/bernietrinh/gg-law.git"
   },
+  "engines": {
+    "node": "^6.10.0"
+  },
   "author": "Bernie Trinh",
   "license": "MIT",
   "bugs": {
