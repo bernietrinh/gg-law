@@ -1,0 +1,34 @@
+{
+  "name": "gg-law",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev nodemon $NODE_DEBUG_OPTION -w src -w config src/index.js --exec babel-node",
+    "build": "",
+    "deploy": "",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bernietrinh/gg-law.git"
+  },
+  "author": "Bernie Trinh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bernietrinh/gg-law/issues"
+  },
+  "homepage": "https://github.com/bernietrinh/gg-law#readme",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.0",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^17.1.0",
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-node6": "^11.0.0"
+  }
+}
